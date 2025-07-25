@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <nav class="navbar" id="navbar">
     <div class="container">
@@ -40,14 +42,14 @@
     <div class="container">
       <div class="hero-content">
         <h1 class="hero-title">Northeastern University<br><span class="accent-text">Systematic Alpha</span></h1>
-        <p class="hero-subtitle">Northeastern's Premier Quantitative Finance Club</p>
+        <p class="hero-subtitle">Northeastern's Premier Quantitative Finance Group</p>
         <div class="hero-actions">
-          <form class="email-signup" id="email-form">
+          <!-- <form class="email-signup" id="email-form">
             <input type="email" placeholder="Enter your email" required class="email-input">
             <button type="submit" class="submit-btn">Join Newsletter</button>
-          </form>
+          </form> -->
           <a href="apply.html" class="hero-apply-btn">
-            <i class="fas fa-users"></i> Join Us
+            Join Us
           </a>
         </div>
         <p class="form-message" id="form-message"></p>
@@ -64,70 +66,62 @@
       <div class="about-brief-content">
         <h2 class="section-title">About <span class="accent-text">NUSA</span></h2>
         <p class="about-brief-text">
-          NUSA is Northeastern's premier quantitative finance club, bridging the gap between academic theory and real-world financial markets. We conduct quantitative research, develop trading algorithms, and explore cutting-edge applications of mathematics, statistics, and computer science in finance. Our members gain hands-on experience with industry tools while building a strong foundation in quantitative methods, risk management, and systematic trading strategies.
+          NUSA is Northeastern University's premier quantitative finance club, bridging the gap between academic theory
+          and real-world financial markets. Our research teams conduct quantitative research, develop trading
+          algorithms, and explore cutting-edge applications of mathematics, statistics, and computer science in finance.
+          Our members gain hands-on experience with industry tools while building a strong foundation in quantitative
+          methods, risk management, and systematic trading strategies.
         </p>
         <div class="about-brief-highlights">
           <div class="highlight-item">
             <i class="fas fa-chart-line"></i>
             <h3>Quantitative Research</h3>
-            <p>Develop and backtest trading strategies using real market data</p>
+            <p>Develop and backtest trading strategies using real market data to find real alpha.</p>
           </div>
           <div class="highlight-item">
-            <i class="fas fa-code"></i>
-            <h3>Technical Skills</h3>
-            <p>Master Python, R, and industry-standard quantitative tools</p>
+            <i class="fas fa-laptop-code"></i>
+            <h3>Quantitative Development</h3>
+            <p>Build robust data pipelines, backtesting frameworks, and execution systems that power our research.</p>
           </div>
           <div class="highlight-item">
             <i class="fas fa-users"></i>
             <h3>Industry Network</h3>
-            <p>Connect with professionals from leading financial institutions</p>
+            <p>Connect with professionals from leading financial institutions and fellow Northeastern students.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-  <footer id="contact" class="footer">
+  <section class="team-highlight section-padding">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="images/nusa-square.png" alt="NUSA Logo" class="footer-logo">
-          <p>Northeastern University Systematic Alpha</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="events.html">Events</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Connect With Us</h4>
-          <p>Email: nusystematicalpha@gmail.com</p>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/nusystematicalpha/" class="social-icon" aria-label="Instagram" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/NUSytematicAlpha/" class="social-icon" aria-label="Facebook" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://github.com/NU-Systematic-Alpha" class="social-icon" aria-label="GitHub" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/northeastern-systematic-alpha/" class="social-icon" aria-label="LinkedIn" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Northeastern University Systematic Alpha. All rights reserved.</p>
+      <div class="about-brief-content">
+        <h2 class="section-title">
+          Talent <span class="accent-text">Drives Everything We Do</span>
+        </h2>
+        <p class="about-brief-text">
+          At NUSA, we believe our members are our greatest strength. If you're intellectually curious, technically
+          driven, and passionate about markets, we want you on our team.
+        </p>
+        <a href="apply.html" class="hero-apply-btn">
+          Join Us
+        </a>
       </div>
     </div>
-  </footer>
+  </section>
+
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.ok ? res.text() : Promise.reject(res.statusText))
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Failed to load footer:', err));
+  </script>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

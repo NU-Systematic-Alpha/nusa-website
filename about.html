@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <nav class="navbar scrolled" id="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container">
       <div class="nav-content">
         <div class="logo">
@@ -48,11 +50,26 @@
     <div class="container">
       <div class="about-content">
         <div class="about-description">
-          <p>Northeastern University Systematic Alpha (NUSA) is a premier student organization dedicated to quantitative finance and algorithmic trading. Founded by passionate students, we bridge the gap between academic theory and real-world financial markets through hands-on learning and practical application.</p>
-          
-          <p>Our members come from diverse academic backgrounds - mathematics, computer science, economics, engineering, and finance - united by a shared interest in the intersection of technology and finance. We provide a collaborative environment where students can develop technical skills, build professional networks, and gain exposure to cutting-edge financial technologies.</p>
-          
-          <p>Through weekly workshops, guest speakers from industry, and collaborative projects, NUSA prepares members for careers in quantitative trading, risk management, financial engineering, and fintech. We maintain partnerships with leading financial institutions and provide our members with unique opportunities for internships and full-time positions.</p>
+          <p>Northeastern University Systematic Alpha (NUSA) is a premier student organization dedicated to quantitative
+            finance and algorithmic trading and development. Founded in 2019 by passionate students, we bridge the gap
+            between academic theory and real-world financial markets through hands-on learning and practical
+            application.</p>
+
+          <p>Our members come from diverse academic backgrounds - mathematics, computer science, economics, engineering,
+            and finance - united by a shared interest in the intersection of technology and finance. We provide a
+            collaborative environment where students can develop technical skills, build professional networks, and gain
+            exposure to cutting-edge financial technologies.</p>
+
+          <p>Through weekly workshops, guest speakers from industry, and collaborative projects, NUSA prepares members
+            for careers in quantitative trading, risk management, financial engineering, and fintech. We maintain
+            partnerships with leading financial institutions and provide our members with unique opportunities for
+            internships and full-time positions.</p>
+
+          <p>Whether you’re just starting out or aiming to specialize, NUSA has a place for you: join as a general
+            member and attend our open weekly meetings, or become a Quantitative Researcher on one of our focused
+            research teams - designing and backtesting real trading strategies and building portfolio-worthy projects.
+          </p>
+
         </div>
         <div class="about-stats">
           <div class="stat-item">
@@ -64,7 +81,7 @@
             <p>Industry Partners</p>
           </div>
           <div class="stat-item">
-            <h3>3</h3>
+            <h3>6</h3>
             <p>Years Active</p>
           </div>
         </div>
@@ -72,46 +89,17 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="images/nusa-square.png" alt="NUSA Logo" class="footer-logo">
-          <p>Northeastern University Systematic Alpha</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="apply.html">Apply</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Connect With Us</h4>
-          <p>Email: nusystematicalpha@gmail.com</p>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/nusystematicalpha/" class="social-icon" aria-label="Instagram" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/NUSytematicAlpha/" class="social-icon" aria-label="Facebook" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://github.com/NU-Systematic-Alpha" class="social-icon" aria-label="GitHub" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/northeastern-systematic-alpha/" class="social-icon" aria-label="LinkedIn" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Northeastern University Systematic Alpha. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.ok ? res.text() : Promise.reject(res.statusText))
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Failed to load footer:', err));
+  </script>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

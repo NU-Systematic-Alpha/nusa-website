@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <nav class="navbar scrolled" id="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container">
       <div class="nav-content">
         <div class="logo">
@@ -40,27 +42,31 @@
   <section class="page-hero">
     <div class="container">
       <h1 class="page-title">Events & <span class="accent-text">Meetings</span></h1>
-      <p class="page-subtitle">Stay connected with our community and upcoming activities</p>
+      <p class="page-subtitle">Stay connected with our community and upcoming activities. Check back in September for
+        dates and events</p>
     </div>
   </section>
 
   <section class="events section-padding">
     <div class="container">
       <div class="events-content">
+        <!-- Updated Weekly General Member Meetings -->
         <div class="events-info">
-          <h3>Weekly Meetings</h3>
-          <p class="meeting-time">Every Thursday, 6:00 PM - 8:00 PM</p>
-          <p class="meeting-location">Snell Library, Room 125</p>
+          <h3>Weekly General Member Meetings</h3>
+          <p class="meeting-time">TBD (Fall 2025)</p>
+          <p class="meeting-location">Room TBD</p>
           <div class="upcoming-topics">
-            <h4>Upcoming Topics:</h4>
+            <h4>Sample Topics & Events:</h4>
             <ul>
-              <li>Introduction to Options Greeks</li>
-              <li>Building a Backtresting Framework</li>
-              <li>Factor Models in Quantitative Finance</li>
-              <li>High-Frequency Trading Strategies</li>
+              <li>Poker Tournament</li>
+              <li>Intro to NUSA</li>
+              <li>Application Office Hours</li>
+              <li>Intro to Quant Finance</li>
             </ul>
           </div>
         </div>
+
+        <!-- Existing Calendar of Featured Events -->
         <div class="events-calendar">
           <div class="event-card">
             <div class="event-date">
@@ -97,46 +103,17 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="images/nusa-square.png" alt="NUSA Logo" class="footer-logo">
-          <p>Northeastern University Systematic Alpha</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="apply.html">Apply</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Connect With Us</h4>
-          <p>Email: nusystematicalpha@gmail.com</p>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/nusystematicalpha/" class="social-icon" aria-label="Instagram" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/NUSytematicAlpha/" class="social-icon" aria-label="Facebook" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://github.com/NU-Systematic-Alpha" class="social-icon" aria-label="GitHub" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/northeastern-systematic-alpha/" class="social-icon" aria-label="LinkedIn" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Northeastern University Systematic Alpha. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.ok ? res.text() : Promise.reject(res.statusText))
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Failed to load footer:', err));
+  </script>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

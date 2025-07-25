@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <nav class="navbar scrolled" id="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container">
       <div class="nav-content">
         <div class="logo">
@@ -41,97 +43,162 @@
     <div class="container">
       <h1 class="page-title">Join <span class="accent-text">NUSA</span></h1>
       <p class="page-subtitle">Become part of Northeastern's premier quantitative finance community</p>
+
+      <a href="#apply" class="jump-btn">Jump to Application ↓</a>
     </div>
   </section>
 
-  <section class="apply section-padding">
+  <section class="about-brief section-padding why-apply">
+    <div class="container">
+      <div class="about-brief-content">
+        <h2 class="section-title">Why Apply?</h2>
+        <p class="about-brief-text">NUSA’s <strong>JRAP program</strong> (Junior Research Analyst Program) is a 4-month
+          intensive, academy-style curriculum covering finance foundations, programming fundamentals, mathematical
+          concepts, and advanced quantitative finance topics. You’ll learn how quants manage risk, how portfolio
+          managers build trading algorithms, and gain deep technical insight into market mechanics.</p>
+        <p class="about-brief-text">JRAP members receive exclusive access to industry speaker events, networking
+          socials, game nights, and office hours—culminating in becoming a quantitative research analyst in our QR track
+          or quantitative developer in our QD track, where you'll participate in a real quant research or development as
+          an official NUSA Researcher. No prior finance or advanced math knowledge is required—just a smart, passionate
+          mindset and basic programming familiarity.</p>
+        <div class="about-brief-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-code"></i>
+            <h3>Hands-On Projects</h3>
+            <p>Algorithm development & risk management exercises to hone your skills</p>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-flask"></i>
+            <h3>Continuing Development</h3>
+            <p>Oppurtunity to participate in a live quant research or development project the following semester</p>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-gamepad"></i>
+            <h3>Workshops and Resources</h3>
+            <p>Exclusive industry speakers, game nights, office hours, and technical workshops</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tracks after JRAP — place this inside the same about-brief section -->
+    <div class="tracks-block">
+      <h3 class="tracks-heading">Choose Your Track After JRAP</h3>
+
+      <div class="tracks-grid">
+        <!-- Quant Researcher -->
+        <div class="highlight-item track-card">
+          <h4>Quantitative Researcher</h4>
+          <p class="track-date accent-text">Available Fall 2025</p>
+          <p class="track-desc">
+            As a QR you’ll join one of our research pods:
+          <ul class="track-points">
+            <li>Lead alpha-generating research projects</li>
+            <li>Develop and backtest statistical models</li>
+            <li>Construct and optimize multi-factor portfolios</li>
+            <li>Present findings to club leadership & industry partners</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Quant Developer -->
+        <div class="highlight-item track-card">
+          <h4>Quantitative Developer</h4>
+          <p class="track-date" style="color: var(--text-gray);">Coming Spring 2026</p>
+          <p class="track-desc">
+            As a QD you’ll build the engines behind our research:
+          <ul class="track-points">
+            <li>Design robust data ingestion pipelines</li>
+            <li>Implement backtesting and execution frameworks</li>
+            <li>Automate risk-reporting and live monitoring</li>
+            <li>Collaborate with QR teams to productionize models</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply" class="apply section-padding">
     <div class="container">
       <div class="apply-content">
         <div class="apply-info">
           <h3>Fall 2025 Applications</h3>
-          <p class="apply-timeline">Applications Open: <span class="accent-text">August 15 - September 15, 2025</span></p>
-          <p class="apply-timeline">Decisions Released: <span class="accent-text">September 22, 2025</span></p>
-          
+          <p class="apply-timeline">Applications Open: <span class="accent-text">Early August 2025</span></p>
+          <p class="apply-timeline">Applications Due: <span class="accent-text">September 9, 2025 (Tuesday)</span></p>
+          <p class="apply-timeline">Office Hours: <span class="accent-text">First week of September</span> (dates TBA)
+          </p>
+
           <div class="apply-requirements">
             <h4>What We Look For:</h4>
             <ul>
-              <li><i class="fas fa-check"></i> Strong quantitative skills (mathematics, statistics, programming)</li>
-              <li><i class="fas fa-check"></i> Passion for financial markets and algorithmic trading</li>
-              <li><i class="fas fa-check"></i> Commitment to weekly meetings and projects</li>
+              <li><i class="fas fa-check"></i> Intellectual curiosity and passion for quantitative finance</li>
+              <li><i class="fas fa-check"></i> Basic programming knowledge (Python, etc.)</li>
+              <li><i class="fas fa-check"></i> Willingness to commit 3–5 hours/week and attend weekly meetings</li>
               <li><i class="fas fa-check"></i> Collaborative mindset and eagerness to learn</li>
             </ul>
           </div>
-          
+
           <div class="apply-process">
             <h4>Application Process:</h4>
             <ol>
               <li>Complete the online application form</li>
-              <li>Complete a take-home assignment</li>
-              <li>Participate in a 1-hour interview (behavioral and technical)</li>
+              <li>Submit the take-home assessment (introductory coding challenge)</li>
+              <li>Attend the Super Day interview (90 minutes, technical & behavioral) between September 11–16, 2025</li>
             </ol>
           </div>
-          
-          <a href="#" class="apply-btn" target="_blank">
-            <i class="fas fa-file-alt"></i> Apply Now
-          </a>
-          <p class="apply-note">Applications for Fall 2025 will open soon. Check back in August!</p>
+
+          <div class="apply-actions" style="margin-top: 30px; display: flex; gap: 20px;">
+            <a href="#" class="apply-btn" target="_blank">
+              <i class="fas fa-file-alt"></i> Apply Now
+            </a>
+            <a href="assets/JRAP_takehome.pdf" class="apply-btn" download>
+              <i class="fas fa-download"></i> Take-Home Assessment
+            </a>
+          </div>
+          <p class="apply-note">Applications open in early August; check back here for the application link.</p>
         </div>
-        
+
         <div class="apply-faq">
           <h3>Frequently Asked Questions</h3>
           <div class="faq-item">
+            <h4>Do I need to apply to be in the club?</h4>
+            <p>No! The JRAP program is an exclusive program for those wanting to level-up their skills and participate
+              in real research. Anybody is welcome to our general body meetings, keep your ears open at FallFest!</p>
+          </div>
+          <div class="faq-item">
             <h4>Do I need prior finance experience?</h4>
-            <p>No! We welcome students from all backgrounds. Strong quantitative skills and enthusiasm to learn are more important than prior finance knowledge.</p>
+            <p>No! We welcome students from all backgrounds. Strong quantitative skills and enthusiasm to learn are more
+              important than prior finance knowledge.</p>
           </div>
           <div class="faq-item">
             <h4>What's the time commitment?</h4>
-            <p>Members attend weekly 2-hour meetings and contribute 3-5 hours per week to projects and learning.</p>
+            <p>Members attend weekly 2-hour meetings and contribute 3–5 hours per week to projects and learning.</p>
+          </div>
+          <div class="faq-item">
+            <h4>When will I hear back?</h4>
+            <p>Interview invitations go out by September 10, and final decisions are released by September 22, 2025.</p>
+          </div>
+          <div class="faq-item">
+            <h4>How competitive is it?</h4>
+            <p>We review all applications holistically; each year we select around 20–30 students for JRAP.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="images/nusa-square.png" alt="NUSA Logo" class="footer-logo">
-          <p>Northeastern University Systematic Alpha</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="apply.html">Apply</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Connect With Us</h4>
-          <p>Email: nusystematicalpha@gmail.com</p>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/nusystematicalpha/" class="social-icon" aria-label="Instagram" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/NUSytematicAlpha/" class="social-icon" aria-label="Facebook" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://github.com/NU-Systematic-Alpha" class="social-icon" aria-label="GitHub" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/northeastern-systematic-alpha/" class="social-icon" aria-label="LinkedIn" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Northeastern University Systematic Alpha. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.ok ? res.text() : Promise.reject(res.statusText))
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Failed to load footer:', err));
+  </script>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
