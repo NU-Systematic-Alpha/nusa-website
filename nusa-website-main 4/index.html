@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUSA - Northeastern University Systematic Alpha</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="NUSA" />
+  <link rel="manifest" href="/favicons/site.webmanifest" />
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <img src="images/nusa-square.png" alt="NUSA Logo" class="logo-desktop">
+          <img src="images/nusa-square.png" alt="NUSA Logo" class="logo-mobile">
+        </div>
+        <button class="mobile-toggle" id="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="apply.html" class="nav-link cta-button">Join Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Northeastern University<br><span class="accent-text">Systematic Alpha</span></h1>
+        <p class="hero-subtitle">Northeastern's Premier Quantitative Finance Group</p>
+        <div class="hero-actions">
+          <!-- <form class="email-signup" id="email-form">
+            <input type="email" placeholder="Enter your email" required class="email-input">
+            <button type="submit" class="submit-btn">Join Newsletter</button>
+          </form> -->
+          <a href="apply.html" class="hero-apply-btn">
+            Join Us
+          </a>
+        </div>
+        <p class="form-message" id="form-message"></p>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="scroll-arrow"></span>
+    </div>
+  </section>
+
+
+  <section class="about-brief section-padding">
+    <div class="container">
+      <div class="about-brief-content">
+        <h2 class="section-title">About <span class="accent-text">NUSA</span></h2>
+        <p class="about-brief-text">
+          NUSA is Northeastern University's premier quantitative finance club, bridging the gap between academic theory
+          and real-world financial markets. Our research teams conduct quantitative research, develop trading
+          algorithms, and explore cutting-edge applications of mathematics, statistics, and computer science in finance.
+          Our members gain hands-on experience with industry tools while building a strong foundation in quantitative
+          methods, risk management, and systematic trading strategies.
+        </p>
+        <div class="about-brief-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-chart-line"></i>
+            <h3>Quantitative Research</h3>
+            <p>Develop and backtest trading strategies using real market data to find real alpha.</p>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Quantitative Development</h3>
+            <p>Build robust data pipelines, backtesting frameworks, and execution systems that power our research.</p>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-users"></i>
+            <h3>Industry Network</h3>
+            <p>Connect with professionals from leading financial institutions and fellow Northeastern students.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-highlight section-padding">
+    <div class="container">
+      <div class="about-brief-content">
+        <h2 class="section-title">
+          Talent <span class="accent-text">Drives Everything We Do</span>
+        </h2>
+        <p class="about-brief-text">
+          At NUSA, we believe our members are our greatest strength. If you're intellectually curious, technically
+          driven, and passionate about markets, we want you on our team.
+        </p>
+        <a href="apply.html" class="hero-apply-btn">
+          Join Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.ok ? res.text() : Promise.reject(res.statusText))
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Failed to load footer:', err));
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
