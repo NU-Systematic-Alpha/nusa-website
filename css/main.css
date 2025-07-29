@@ -998,7 +998,7 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   color: var(--text-gray);
-  text-decoration: none;
+  text-decoration: none !important;
   transition: var(--transition);
   font-size: 1.2rem;
   border: 1px solid transparent;
@@ -1009,6 +1009,11 @@ body {
   color: var(--text-white);
   border-color: var(--accent-red);
   transform: translateY(-3px);
+}
+
+/* Ensure no underlines on social links */
+.social-icons a {
+  text-decoration: none !important;
 }
 
 .footer-bottom {
