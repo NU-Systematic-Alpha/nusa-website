@@ -37,8 +37,16 @@ body {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   letter-spacing: -1px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.6;
 }
 
 .accent-text {
@@ -679,6 +687,101 @@ body {
 /* Events Section */
 .events {
   background-color: var(--dark-gray);
+}
+
+.events-section {
+  margin-bottom: 80px;
+}
+
+.events-section:last-child {
+  margin-bottom: 0;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.event-item {
+  background: var(--card-bg);
+  padding: 40px 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: var(--transition);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-red);
+  box-shadow: 0 10px 30px rgba(195, 1, 0, 0.1);
+}
+
+.event-item i {
+  font-size: 3rem;
+  color: var(--accent-red);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.event-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--text-white);
+}
+
+.event-item p {
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+}
+
+.event-meta span {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.event-meta i {
+  font-size: 0.9rem;
+  color: var(--accent-red);
+  margin: 0;
+}
+
+.meeting-info {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.meeting-info p {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.meeting-info i {
+  color: var(--accent-red);
+  margin-right: 10px;
 }
 
 .events-content {
@@ -1360,6 +1463,11 @@ body {
     font-size: 2rem;
   }
 
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
   .page-title {
     font-size: 2.5rem;
   }
@@ -1386,6 +1494,34 @@ body {
 
   .events-content {
     grid-template-columns: 1fr;
+  }
+
+  .events-section {
+    margin-bottom: 60px;
+  }
+
+  .events-grid {
+    gap: 25px;
+  }
+
+  .event-item {
+    padding: 30px 20px;
+  }
+
+  .event-item i {
+    font-size: 2.5rem;
+  }
+
+  .event-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .meeting-info {
+    padding: 20px;
+  }
+
+  .meeting-info p {
+    font-size: 1rem;
   }
 
   .about-content {
