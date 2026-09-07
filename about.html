@@ -38,6 +38,7 @@
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link active">About</a></li>
           <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="projects.html" class="nav-link">Research</a></li>
           <li><a href="events.html" class="nav-link">Events</a></li>
           <li><a href="apply.html" class="nav-link cta-button">Join Us</a></li>
         </ul>
@@ -87,7 +88,7 @@
             <p>Industry Partners</p>
           </div>
           <div class="stat-item">
-            <h3>6</h3>
+            <h3><span id="years-active"></span>+</h3>
             <p>Years Active</p>
           </div>
         </div>
@@ -147,6 +148,9 @@
   </script>
 
   <script src="js/main.js"></script>
+  <script>
+    document.getElementById('years-active').textContent = new Date().getFullYear() - 2019;
+  </script>
 </body>
 
 </html>

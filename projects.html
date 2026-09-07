@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - NUSA</title>
+  <title>Research - NUSA</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="NUSA" />
+  <link rel="manifest" href="/favicons/site.webmanifest" />
 </head>
+
 <body>
-  <nav class="navbar scrolled" id="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container">
       <div class="nav-content">
         <div class="logo">
@@ -29,7 +37,8 @@
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="projects.html" class="nav-link active">Research</a></li>
           <li><a href="events.html" class="nav-link">Events</a></li>
           <li><a href="apply.html" class="nav-link cta-button">Join Us</a></li>
         </ul>
@@ -39,191 +48,100 @@
 
   <section class="page-hero">
     <div class="container">
-      <h1 class="page-title">Our <span class="accent-text">Projects</span></h1>
-      <p class="page-subtitle">Cutting-edge quantitative finance research and development</p>
+      <h1 class="page-title">Our <span class="accent-text">Research</span></h1>
+      <p class="page-subtitle">A closer look at the questions our research teams explore.</p>
+    </div>
+  </section>
+  <section class="research-library section-padding">
+    <div class="container">
+      <p class="section-subtitle">Explore five projects from our Spring 2026 Research Showcase, spanning systematic strategies, market interconnectedness, and research infrastructure.</p>
+
+      <article class="research-excerpt" aria-labelledby="research-1">
+        <div class="research-summary">
+          <span class="placeholder-label">Quantitative Research / Spring 2026</span>
+          <h2 id="research-1">Systematic Mean Reversion in Growth-Value Equity Pairs</h2>
+          <p>We investigate short-term reversals in technology stocks through the lens of growth-value rotation. Rolling, exponentially weighted, and adaptive z-scores identify price overextensions; offsetting retail-stock positions serve as value-oriented hedges, without correlation or cointegration screening.</p>
+          <p class="pdf-help">The study combines selected configurations into a diversified strategy index and tests transaction and financing costs across five scenarios. The reported in-sample results suggest that conditional mean reversion can survive trading frictions. Out-of-sample testing and evaluation across different market regimes remain next steps.</p>
+          <a class="research-pdf-link" href="output/pdf/NUSA%20Fall25-Spring26%20Research%20Showcase.pdf" target="_blank" rel="noopener noreferrer">Read presentation PDF <span class="sr-only">for Systematic Mean Reversion in Growth-Value Equity Pairs (new tab)</span></a>
+          <p class="pdf-help">If the preview is unavailable on your device, use the link above.</p>
+        </div>
+        <object class="research-pdf" data="output/pdf/NUSA%20Fall25-Spring26%20Research%20Showcase.pdf#view=FitH&amp;navpanes=0" type="application/pdf" aria-label="Systematic Mean Reversion in Growth-Value Equity Pairs presentation PDF">
+          <p>Preview unavailable. <a href="output/pdf/NUSA%20Fall25-Spring26%20Research%20Showcase.pdf">Read Systematic Mean Reversion in Growth-Value Equity Pairs PDF</a>.</p>
+        </object>
+      </article>
+
+      <article class="research-excerpt" aria-labelledby="research-2">
+        <div class="research-summary">
+          <span class="placeholder-label">Quantitative Development / Spring 2026</span>
+          <h2 id="research-2">Alternative Data Scraping</h2>
+          <p>Our team built a serverless pipeline to collect news prominence and company hiring data for future trading-signal research. The April 2026 showcase reports coverage of 30 news sources and successful job-board scraping for 470 of 503 companies tested, using 15 applicant-tracking providers and timestamped PostgreSQL snapshots.</p>
+          <p class="pdf-help">The dataset supports questions about whether headline placement, story convergence, hiring velocity, and wage changes anticipate market behavior. Those signals remain hypotheses: longer data histories and further validation are needed, while sentiment analysis and topic extraction are planned extensions.</p>
+          <a class="research-pdf-link" href="output/pdf/Data%20Scraping%20-%20Short.pdf" target="_blank" rel="noopener noreferrer">Read presentation PDF <span class="sr-only">for Alternative Data Scraping (new tab)</span></a>
+          <p class="pdf-help">If the preview is unavailable on your device, use the link above.</p>
+        </div>
+        <object class="research-pdf" data="output/pdf/Data%20Scraping%20-%20Short.pdf#view=FitH&amp;navpanes=0" type="application/pdf" aria-label="Alternative Data Scraping presentation PDF">
+          <p>Preview unavailable. <a href="output/pdf/Data%20Scraping%20-%20Short.pdf">Read Alternative Data Scraping PDF</a>.</p>
+        </object>
+      </article>
+      <article class="research-excerpt" aria-labelledby="research-3">
+        <div class="research-summary">
+          <span class="placeholder-label">Quantitative Research / Spring 2026</span>
+          <h2 id="research-3">Cross-Country Sovereign Yield Spillovers</h2>
+          <p>We adapt the Diebold-Yilmaz spillover framework to government bond yields across 11 countries and four maturities, using vector autoregression and forecast-error variance decomposition to measure cross-market connections. The study finds stronger spillovers at longer maturities and sharp increases during global stress events.</p>
+          <p class="pdf-help">Historical analysis links lower return-spillover environments to stronger emerging-market versus safe-haven spread performance, with the pattern appearing in both pre-2020 and post-2022 subsamples. The model identifies predictive relationships rather than causality; omitted global factors, country-selection bias, and daily time-zone alignment remain limitations.</p>
+          <a class="research-pdf-link" href="output/pdf/NUSA%20Spring%2026%20RS%20-%20Spillover%20Project.pdf" target="_blank" rel="noopener noreferrer">Read presentation PDF <span class="sr-only">for Cross-Country Sovereign Yield Spillovers (new tab)</span></a>
+          <p class="pdf-help">If the preview is unavailable on your device, use the link above.</p>
+        </div>
+        <object class="research-pdf" data="output/pdf/NUSA%20Spring%2026%20RS%20-%20Spillover%20Project.pdf#view=FitH&amp;navpanes=0" type="application/pdf" aria-label="Cross-Country Sovereign Yield Spillovers presentation PDF">
+          <p>Preview unavailable. <a href="output/pdf/NUSA%20Spring%2026%20RS%20-%20Spillover%20Project.pdf">Read Cross-Country Sovereign Yield Spillovers PDF</a>.</p>
+        </object>
+      </article>
+
+
+      <article class="research-excerpt" aria-labelledby="research-4">
+        <div class="research-summary">
+          <span class="placeholder-label">Quantitative Research / Spring 2026</span>
+          <h2 id="research-4">Event-Driven Implied Volatility Mispricing</h2>
+          <p>We study how options price uncertainty around earnings, FOMC decisions, CPI and unemployment releases, geopolitical shocks, and product launches. The framework compares long and short at-the-money straddles across event-relative entry and exit windows, using individual equities and liquid ETFs.</p>
+          <p class="pdf-help">Results vary substantially by sector, event, and holding period: the broad pre-earnings long-straddle edge is weak, while sector-specific strategies and selected product-launch windows show stronger historical results. Limited test samples, missing historical liquidity measures, and unmodeled early assignment constrain interpretation; the technology earnings backtest also assumes negligible transaction costs.</p>
+          <a class="research-pdf-link" href="output/pdf/NUSA%20Spring%2026%20RS%20-%20Equity%20Vol.%20Project.pdf" target="_blank" rel="noopener noreferrer">Read presentation PDF <span class="sr-only">for Event-Driven Implied Volatility Mispricing (new tab)</span></a>
+          <p class="pdf-help">If the preview is unavailable on your device, use the link above.</p>
+        </div>
+        <object class="research-pdf" data="output/pdf/NUSA%20Spring%2026%20RS%20-%20Equity%20Vol.%20Project.pdf#view=FitH&amp;navpanes=0" type="application/pdf" aria-label="Event-Driven Implied Volatility Mispricing presentation PDF">
+          <p>Preview unavailable. <a href="output/pdf/NUSA%20Spring%2026%20RS%20-%20Equity%20Vol.%20Project.pdf">Read Event-Driven Implied Volatility Mispricing PDF</a>.</p>
+        </object>
+      </article>
+
+
+
+      <article class="research-excerpt" aria-labelledby="research-5">
+        <div class="research-summary">
+          <span class="placeholder-label">Quantitative Development / Spring 2026</span>
+          <h2 id="research-5">Agentic Backtest Evaluator</h2>
+          <p>We built an AI-assisted evaluator that turns backtest CSVs and strategy descriptions into structured reports and follow-up conversations. It combines performance metrics, drawdown analysis, transaction-cost sensitivity, market news, and retrieval from a curated research knowledge base to help explain strategy vulnerabilities.</p>
+          <p class="pdf-help">Across 10 benchmark scenarios scored by an LLM judge, the evaluator achieved quality scores comparable to ChatGPT and Claude while examining more time periods and using more tools. The results point to broader analysis, with efficiency still to improve. News-coverage gaps, simple VIX-based regime rules, and occasional fabricated headlines remain priorities for refinement.</p>
+          <a class="research-pdf-link" href="output/pdf/NUSA%20Spring%2026%20RS%20-%20Agentic%20Backtest%20Evaluator.%20Project%20.pdf" target="_blank" rel="noopener noreferrer">Read presentation PDF <span class="sr-only">for Agentic Backtest Evaluator (new tab)</span></a>
+          <p class="pdf-help">If the preview is unavailable on your device, use the link above.</p>
+        </div>
+        <object class="research-pdf" data="output/pdf/NUSA%20Spring%2026%20RS%20-%20Agentic%20Backtest%20Evaluator.%20Project%20.pdf#view=FitH&amp;navpanes=0" type="application/pdf" aria-label="Agentic Backtest Evaluator presentation PDF">
+          <p>Preview unavailable. <a href="output/pdf/NUSA%20Spring%2026%20RS%20-%20Agentic%20Backtest%20Evaluator.%20Project%20.pdf">Read Agentic Backtest Evaluator PDF</a>.</p>
+        </object>
+      </article>
+
     </div>
   </section>
 
-  <section class="projects section-padding">
-    <div class="container">
-      <div class="projects-grid-page">
-        <div class="project-card-page">
-          <div class="project-image">
-            <div class="image-placeholder">
-              <i class="fas fa-chart-line"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>Pairs Trading Algorithm</h3>
-              <span class="project-tag">Statistical Arbitrage</span>
-            </div>
-            <p>Developed a cointegration-based pairs trading strategy with dynamic position sizing and risk management.</p>
-            <div class="project-links">
-              <a href="#" class="project-link github-link" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="#" class="project-link paper-link" target="_blank">
-                <i class="fas fa-file-alt"></i> Research Paper
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card-page">
-          <div class="project-image">
-            <div class="image-placeholder">
-              <i class="fas fa-brain"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>ML Market Predictor</h3>
-              <span class="project-tag">Machine Learning</span>
-            </div>
-            <p>Built an LSTM neural network for predicting short-term price movements using order book dynamics.</p>
-            <div class="project-links">
-              <a href="#" class="project-link github-link" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="#" class="project-link paper-link" target="_blank">
-                <i class="fas fa-file-alt"></i> Research Paper
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card-page">
-          <div class="project-image">
-            <div class="image-placeholder">
-              <i class="fas fa-coins"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>Options Market Maker</h3>
-              <span class="project-tag">Derivatives</span>
-            </div>
-            <p>Created an automated market-making system for options with dynamic hedging and volatility modeling.</p>
-            <div class="project-links">
-              <a href="#" class="project-link github-link" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="#" class="project-link paper-link" target="_blank">
-                <i class="fas fa-file-alt"></i> Research Paper
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card-page">
-          <div class="project-image">
-            <div class="image-placeholder">
-              <i class="fas fa-comments"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>Crypto Sentiment Analysis</h3>
-              <span class="project-tag">NLP & Crypto</span>
-            </div>
-            <p>Analyzing social media sentiment to predict cryptocurrency price movements using transformer models.</p>
-            <div class="project-links">
-              <a href="#" class="project-link github-link" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="#" class="project-link paper-link" target="_blank">
-                <i class="fas fa-file-alt"></i> Research Paper
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card-page">
-          <div class="project-image">
-            <div class="image-placeholder">
-              <i class="fas fa-robot"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>Algorithmic Trading Bot</h3>
-              <span class="project-tag">Automation</span>
-            </div>
-            <p>Multi-strategy trading bot with real-time market data processing and risk management protocols.</p>
-            <div class="project-links">
-              <a href="#" class="project-link github-link" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="#" class="project-link paper-link" target="_blank">
-                <i class="fas fa-file-alt"></i> Research Paper
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card-page">
-          <div class="project-image">
-            <div class="image-placeholder">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>Risk Management System</h3>
-              <span class="project-tag">Risk Analytics</span>
-            </div>
-            <p>Comprehensive risk assessment framework using VaR, stress testing, and portfolio optimization techniques.</p>
-            <div class="project-links">
-              <a href="#" class="project-link github-link" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <a href="#" class="project-link paper-link" target="_blank">
-                <i class="fas fa-file-alt"></i> Research Paper
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="images/nusa-square.png" alt="NUSA Logo" class="footer-logo">
-          <p>Northeastern University Systematic Alpha</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="apply.html">Apply</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Connect With Us</h4>
-          <p>Email: nusystematicalpha@gmail.com</p>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/nusystematicalpha/" class="social-icon" aria-label="Instagram" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/NUSytematicAlpha/" class="social-icon" aria-label="Facebook" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://github.com/NU-Systematic-Alpha" class="social-icon" aria-label="GitHub" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/northeastern-systematic-alpha/" class="social-icon" aria-label="LinkedIn" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Northeastern University Systematic Alpha. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.ok ? res.text() : Promise.reject(res.statusText))
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Failed to load footer:', err));
+  </script>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
