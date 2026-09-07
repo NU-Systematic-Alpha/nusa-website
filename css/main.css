@@ -2198,7 +2198,7 @@ body {
   }
 }
 /* Event photography and research excerpts */
-.event-photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.event-photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; max-width: 80%; margin: 0 auto; }
 .event-photo { min-width: 0; }
 .event-photo img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; border: 1px solid #333; }
 .event-photo figcaption { padding: 18px 0; }
