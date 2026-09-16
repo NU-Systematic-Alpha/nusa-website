@@ -24,6 +24,48 @@
   <meta name="twitter:title" content="Join NUSA | Northeastern Quantitative Finance Club">
   <meta name="twitter:image" content="https://www.nusystematicalpha.com/images/nusa-og.png">
   <meta name="twitter:image:alt" content="Northeastern University Systematic Alpha logo">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.nusystematicalpha.com/apply#webpage",
+      "url": "https://www.nusystematicalpha.com/apply",
+      "name": "Join NUSA | Northeastern Quantitative Finance Club",
+      "description": "Join Northeastern University Systematic Alpha. Explore the Junior Research Analyst Program, research and development tracks, and recruitment opportunities.",
+      "isPartOf": {
+        "@id": "https://www.nusystematicalpha.com/#website"
+      },
+      "about": {
+        "@id": "https://www.nusystematicalpha.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://www.nusystematicalpha.com/apply#breadcrumb"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.nusystematicalpha.com/apply#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.nusystematicalpha.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Join NUSA",
+          "item": "https://www.nusystematicalpha.com/apply"
+        }
+      ]
+    }
+  ]
+}
+  </script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,25 +82,25 @@
 </head>
 
 <body>
-  <nav class="navbar" id="navbar">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
     <div class="container">
       <div class="nav-content">
-        <div class="logo">
-          <a href="index">
-            <img src="images/nusa-square.png" alt="NUSA Logo" class="logo-desktop">
-            <img src="images/nusa-square.png" alt="NUSA Logo" class="logo-mobile">
+        <a class="logo" href="/" aria-label="NUSA home">
+            <img src="images/nusa-square.png" alt="" width="40" height="40" class="logo-desktop">
+            <img src="images/nusa-square.png" alt="" width="40" height="40" class="logo-mobile">
           </a>
-        </div>
-        <button class="mobile-toggle" id="mobile-toggle">
+        <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <ul class="nav-links" id="nav-links">
-          <li><a href="index" class="nav-link">Home</a></li>
+          <li><a href="/" class="nav-link">Home</a></li>
           <li><a href="about" class="nav-link">About</a></li>
           <li><a href="team" class="nav-link">Team</a></li>
           <li><a href="projects" class="nav-link">Research</a></li>
+
           <li><a href="events" class="nav-link">Events</a></li>
           <li><a href="apply" class="nav-link cta-button active">Join Us</a></li>
         </ul>
@@ -66,8 +108,11 @@
     </div>
   </nav>
 
+  <main id="main-content" tabindex="-1">
+
   <section class="page-hero">
     <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Join NUSA</li></ol></nav>
       <h1 class="page-title">Join <span class="accent-text">NUSA</span></h1>
       <p class="page-subtitle">Become part of Northeastern's premier quantitative finance community</p>
 
@@ -79,13 +124,14 @@
     <div class="container">
       <div class="about-brief-content">
         <h2 class="section-title">Why Apply?</h2>
+        <p class="section-followup">See what our teams build in the <a href="projects">research library</a>.</p>
         <p class="about-brief-text">NUSA’s <strong>JRAP program</strong> (Junior Research Analyst Program) is a 4-month
           intensive, academy-style curriculum covering finance foundations, programming fundamentals, mathematical
           concepts, and advanced quantitative finance topics. You’ll learn how quants manage risk, how portfolio
           managers build trading algorithms, and gain deep technical insight into market mechanics.</p>
         <p class="about-brief-text">JRAP members receive exclusive access to industry speaker events, networking
           socials, game nights, and office hours—culminating in becoming a quantitative research analyst in our QR track
-          or quantitative developer in our QD track, where you'll participate in a real quant research or development as
+          or quantitative developer in our QD track, where you’ll contribute to a quantitative research or development project as
           an official NUSA Researcher. No prior finance or advanced math knowledge is required—just a smart, passionate
           mindset and basic programming familiarity.</p>
         <div class="about-brief-highlights">
@@ -97,7 +143,7 @@
           <div class="highlight-item">
             <i class="fas fa-flask"></i>
             <h3>Continuing Development</h3>
-            <p>Oppurtunity to participate in a live quant research or development project the following semester</p>
+            <p>Opportunity to participate in a live quant research or development project the following semester</p>
           </div>
           <div class="highlight-item">
             <i class="fas fa-gamepad"></i>
@@ -118,14 +164,13 @@
           <h4>Quantitative Researcher</h4>
           <!-- <p class="track-date accent-text">Available Spring 2026</p> -->
           <p class="track-desc">
-            As a QR you’ll join one of our research pods:
+            As a QR you’ll join one of our research pods:</p>
           <ul class="track-points">
             <li>Lead alpha-generating research projects</li>
             <li>Develop and backtest statistical models</li>
             <li>Construct and optimize multi-factor portfolios</li>
             <li>Present findings to club leadership & industry partners</li>
           </ul>
-          </p>
         </div>
 
         <!-- Quant Developer -->
@@ -133,14 +178,13 @@
           <h4>Quantitative Developer</h4>
           <!-- <p class="track-date" style="color: var(--text-gray);">Coming Spring 2026</p> -->
           <p class="track-desc">
-            As a QD you’ll build the engines behind our research:
+            As a QD you’ll build the engines behind our research:</p>
           <ul class="track-points">
             <li>Design robust data ingestion pipelines</li>
             <li>Implement backtesting and execution frameworks</li>
             <li>Automate risk-reporting and live monitoring</li>
             <li>Collaborate with QR teams to productionize models</li>
           </ul>
-          </p>
         </div>
       </div>
     </div>
@@ -150,11 +194,11 @@
     <div class="container">
       <div class="apply-content">
         <div class="apply-info">
-          <h3>NUSA Applications</h3>
+          <h2>NUSA Applications</h2>
           <p class="apply-timeline">See the application form for current recruitment details and deadlines.</p>
 
           <div class="apply-requirements">
-            <h4>What We Look For:</h4>
+            <h3>What we look for</h3>
             <ul>
               <li><i class="fas fa-check"></i> Intellectual curiosity and passion for quantitative finance</li>
               <li><i class="fas fa-check"></i> Basic programming knowledge (experience is a plus)</li>
@@ -164,7 +208,7 @@
           </div>
 
           <div class="apply-process">
-            <h4>Application Process:</h4>
+            <h3>Application process</h3>
             <ol>
               <li>Complete the online application form</li>
               <!-- <li>Submit the take-home assessment (introductory coding challenge)</li> -->
@@ -211,28 +255,28 @@
           </div>
         </div>
 
-        <div class="apply-faq">
-          <h3>Frequently Asked Questions</h3>
+        <div class="apply-faq" id="faq">
+          <h2>Frequently asked questions</h2>
           <div class="faq-item">
-            <h4>Do I need to apply to be in the club?</h4>
+            <h3>Do I need to apply to be in the club?</h3>
             <p>No! The JRAP program is an exclusive program for those wanting to level-up their skills and participate
-              in real research. Anybody is welcome to our general body meetings, keep your ears open at FallFest!</p>
+              in real research. General body meetings are open to students who want to get involved. Check our <a href="events">events page</a> for updates.</p>
           </div>
           <div class="faq-item">
-            <h4>Do I need prior finance experience?</h4>
+            <h3>Do I need prior finance experience?</h3>
             <p>No! We welcome students from all backgrounds. Strong quantitative skills and enthusiasm to learn are more
               important than prior finance knowledge.</p>
           </div>
           <div class="faq-item">
-            <h4>What's the time commitment?</h4>
+            <h3>What's the time commitment?</h3>
             <p>Members attend weekly 2-hour meetings and contribute 5–10 hours per week to projects and learning.</p>
           </div>
           <div class="faq-item">
-            <h4>When will I hear back?</h4>
-            <p>Interview invitations go out by September 22, and final decisions are released by September 31, 2026.</p>
+            <h3>When will I hear back?</h3>
+            <p>Check the application form for the current recruitment timeline. Interview scheduling and decision updates will be shared with applicants.</p>
           </div>
           <div class="faq-item">
-            <h4>How competitive is it?</h4>
+            <h3>How competitive is it?</h3>
             <p>We review all applications holistically, looking for students who demonstrate strong potential and genuine interest in quantitative finance. JRAP is designed to be an intensive, close-knit cohort experience.</p>
           </div>
         </div>
@@ -240,15 +284,61 @@
     </div>
   </section>
 
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch('footer.html')
-      .then(res => res.ok ? res.text() : Promise.reject(res.statusText))
-      .then(html => {
-        document.getElementById('footer-placeholder').innerHTML = html;
-      })
-      .catch(err => console.error('Failed to load footer:', err));
-  </script>
+  </main>
+
+  <!-- Shared footer: keep in sync with footer.html -->
+<footer class="footer">
+    <div class="container">
+
+      <div class="footer-signup">
+        <h2>Stay connected with NUSA</h2>
+        <p>Receive formal notifications regarding application releases, program updates, and club information directly to your inbox.</p>
+        <form action="https://formsubmit.co/8907cb2f2ef0ed7e71e6a164039fda04" method="POST">
+                      <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="your.email@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-sections">
+        <div class="footer-brand">
+          <img class="footer-logo" src="images/nusa-bannar.png" alt="NU Systematic Alpha logo" width="8000" height="1000" loading="lazy">
+          <p>Empowering students through data‐driven trading and research.</p>
+        </div>
+        <div class="footer-links">
+          <h2>Explore NUSA</h2>
+          <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="projects">Research</a></li>
+
+            <li><a href="team">Team</a></li>
+            <li><a href="events">Events</a></li>
+            <li><a href="apply">Apply</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h2>Connect with us</h2>
+          <p>Northeastern University · Boston, MA</p>
+          <p><a href="mailto:nusystematicalpha@gmail.com">nusystematicalpha@gmail.com</a></p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/nusystematicalpha/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/NUSytematicAlpha/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/NU-Systematic-Alpha" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/company/https-nusa-website-henna.vercel.app-/posts/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Northeastern University Systematic Alpha. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
 
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };

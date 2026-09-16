@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NUSA Events | Northeastern Quantitative Finance</title>
-  <meta name="twitter:description" content="Explore NUSA meetings, industry events, and community highlights, including Fidelity, the co-op panel, and our research showcase.">
-  <meta property="og:description" content="Explore NUSA meetings, industry events, and community highlights, including Fidelity, the co-op panel, and our research showcase.">
-  <meta name="description" content="Explore NUSA meetings, industry events, and community highlights, including Fidelity, the co-op panel, and our research showcase.">
+  <meta name="twitter:description" content="Explore NUSA’s research showcase, Fidelity visit, co-op panel, and upcoming quantitative finance meetings at Northeastern University.">
+  <meta property="og:description" content="Explore NUSA’s research showcase, Fidelity visit, co-op panel, and upcoming quantitative finance meetings at Northeastern University.">
+  <meta name="description" content="Explore NUSA’s research showcase, Fidelity visit, co-op panel, and upcoming quantitative finance meetings at Northeastern University.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.nusystematicalpha.com/events">
   <meta property="og:type" content="website">
@@ -24,6 +24,48 @@
   <meta name="twitter:title" content="NUSA Events | Northeastern Quantitative Finance">
   <meta name="twitter:image" content="https://www.nusystematicalpha.com/images/nusa-og.png">
   <meta name="twitter:image:alt" content="Northeastern University Systematic Alpha logo">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.nusystematicalpha.com/events#webpage",
+      "url": "https://www.nusystematicalpha.com/events",
+      "name": "NUSA Events | Northeastern Quantitative Finance",
+      "description": "Explore NUSA’s research showcase, Fidelity visit, co-op panel, and upcoming quantitative finance meetings at Northeastern University.",
+      "isPartOf": {
+        "@id": "https://www.nusystematicalpha.com/#website"
+      },
+      "about": {
+        "@id": "https://www.nusystematicalpha.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://www.nusystematicalpha.com/events#breadcrumb"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.nusystematicalpha.com/events#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.nusystematicalpha.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Events",
+          "item": "https://www.nusystematicalpha.com/events"
+        }
+      ]
+    }
+  ]
+}
+  </script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,63 +81,76 @@
 </head>
 
 <body>
-  <nav class="navbar" id="navbar">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
     <div class="container">
       <div class="nav-content">
-        <div class="logo">
-          <a href="index">
-            <img src="images/nusa-square.png" alt="NUSA Logo" class="logo-desktop">
-            <img src="images/nusa-square.png" alt="NUSA Logo" class="logo-mobile">
+        <a class="logo" href="/" aria-label="NUSA home">
+            <img src="images/nusa-square.png" alt="" width="40" height="40" class="logo-desktop">
+            <img src="images/nusa-square.png" alt="" width="40" height="40" class="logo-mobile">
           </a>
-        </div>
-        <button class="mobile-toggle" id="mobile-toggle">
+        <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <ul class="nav-links" id="nav-links">
-          <li><a href="index" class="nav-link">Home</a></li>
+          <li><a href="/" class="nav-link">Home</a></li>
           <li><a href="about" class="nav-link">About</a></li>
           <li><a href="team" class="nav-link">Team</a></li>
           <li><a href="projects" class="nav-link">Research</a></li>
-          <li><a href="events" class="nav-link active">Events</a></li>
+
+          <li><a href="events" class="nav-link active" aria-current="page">Events</a></li>
           <li><a href="apply" class="nav-link cta-button">Join Us</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <main id="main-content" tabindex="-1">
+
   <section class="page-hero">
     <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Events</li></ol></nav>
       <h1 class="page-title">Events & <span class="accent-text">Meetings</span></h1>
-      <p class="page-subtitle">Stay connected with our community and upcoming activities.</p>
+      <p class="page-subtitle">Industry visits, student research presentations, and meetings for Northeastern’s quantitative finance community.</p>
     </div>
   </section>
 
   <section id="event-highlights" class="event-highlights section-padding">
     <div class="container">
       <h2 class="section-title">Life at <span class="accent-text">NUSA</span></h2>
-      <p class="section-subtitle">Fidelity, our co-op panel, and showcase. Photos coming soon.</p>
+      <p class="section-subtitle">Recent highlights from our community. <a href="https://www.linkedin.com/company/https-nusa-website-henna.vercel.app-/posts/">Read NUSA’s event updates on LinkedIn</a>.</p>
       <div class="event-photo-grid">
         <figure class="event-photo">
-          <img src="images/events/fidelity.jpeg" alt="Placeholder for Fidelity event photos" width="960" height="600" loading="lazy">
-          <figcaption><h3>Fidelity</h3>
-            <!-- <p>Event photos coming soon.</p> -->
+          <img src="images/events/fidelity.webp" alt="NUSA members visiting Fidelity Investments" width="1013" height="754" loading="lazy">
+          <figcaption><h3>Fidelity Investments visit</h3>
+            <p>Members visited Fidelity’s Boston office to discuss systematic strategies, portfolio construction, and risk with portfolio managers and quantitative analysts.</p>
           </figcaption>
         </figure>
 
         <figure class="event-photo">
-          <img src="images/events/showcase.jpeg" alt="Placeholder for Showcase event photos" width="960" height="600" loading="lazy">
-          <figcaption><h3>Showcase</h3>
-            <!-- <p>Event photos coming soon.</p> -->
+          <img src="images/events/showcase.webp" alt="NUSA members at the student research showcase" width="1440" height="1080" loading="lazy">
+          <figcaption><h3>Spring 2026 research showcase</h3>
+            <p>Our April 14, 2026 showcase brought research and development teams together to present their semester’s work.</p>
+            <a class="text-link" href="projects">Read the showcase presentations</a>
           </figcaption>
         </figure>
       </div>
     </div>
   </section>
 
+  <section class="section-padding content-section">
+    <div class="container reading-layout">
+      <div><h2>Learning from co-op experiences</h2><p>NUSA’s member panel covered work in quantitative finance, machine learning, and software engineering, alongside recruiting experiences.</p><a class="text-link" href="https://www.linkedin.com/company/https-nusa-website-henna.vercel.app-/posts/">Follow NUSA’s event recaps</a></div>
+      <aside class="content-aside"><h2>Keep up with the club</h2><p>For meeting announcements and confirmed times, follow <a href="https://www.instagram.com/nusystematicalpha/">@nusystematicalpha on Instagram</a> and <a href="https://www.linkedin.com/company/https-nusa-website-henna.vercel.app-/posts/">NUSA on LinkedIn</a>.</p></aside>
+    </div>
+  </section>
+
   <section class="events section-padding">
     <div class="container">
+      <h2 class="section-title">Meetings and activities</h2>
+      <p class="section-subtitle">Dates and rooms below are awaiting confirmation. Check our social channels before attending.</p>
       <div class="events-grid">
         <div class="event-item">
           <i class="fas fa-info-circle"></i>
@@ -137,15 +192,61 @@
     </div>
   </section>
 
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch('footer.html')
-      .then(res => res.ok ? res.text() : Promise.reject(res.statusText))
-      .then(html => {
-        document.getElementById('footer-placeholder').innerHTML = html;
-      })
-      .catch(err => console.error('Failed to load footer:', err));
-  </script>
+  </main>
+
+  <!-- Shared footer: keep in sync with footer.html -->
+<footer class="footer">
+    <div class="container">
+
+      <div class="footer-signup">
+        <h2>Stay connected with NUSA</h2>
+        <p>Receive formal notifications regarding application releases, program updates, and club information directly to your inbox.</p>
+        <form action="https://formsubmit.co/8907cb2f2ef0ed7e71e6a164039fda04" method="POST">
+                      <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="your.email@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-sections">
+        <div class="footer-brand">
+          <img class="footer-logo" src="images/nusa-bannar.png" alt="NU Systematic Alpha logo" width="8000" height="1000" loading="lazy">
+          <p>Empowering students through data‐driven trading and research.</p>
+        </div>
+        <div class="footer-links">
+          <h2>Explore NUSA</h2>
+          <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="projects">Research</a></li>
+
+            <li><a href="team">Team</a></li>
+            <li><a href="events">Events</a></li>
+            <li><a href="apply">Apply</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h2>Connect with us</h2>
+          <p>Northeastern University · Boston, MA</p>
+          <p><a href="mailto:nusystematicalpha@gmail.com">nusystematicalpha@gmail.com</a></p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/nusystematicalpha/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/NUSytematicAlpha/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/NU-Systematic-Alpha" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/company/https-nusa-website-henna.vercel.app-/posts/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Northeastern University Systematic Alpha. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
 
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };

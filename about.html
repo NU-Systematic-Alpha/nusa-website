@@ -24,6 +24,48 @@
   <meta name="twitter:title" content="About NUSA | Northeastern Quantitative Finance Club">
   <meta name="twitter:image" content="https://www.nusystematicalpha.com/images/nusa-og.png">
   <meta name="twitter:image:alt" content="Northeastern University Systematic Alpha logo">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.nusystematicalpha.com/about#webpage",
+      "url": "https://www.nusystematicalpha.com/about",
+      "name": "About NUSA | Northeastern Quantitative Finance Club",
+      "description": "Learn about NUSA, Northeastern University’s quantitative finance community, connecting students through research, workshops, and industry partnerships.",
+      "isPartOf": {
+        "@id": "https://www.nusystematicalpha.com/#website"
+      },
+      "about": {
+        "@id": "https://www.nusystematicalpha.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://www.nusystematicalpha.com/about#breadcrumb"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.nusystematicalpha.com/about#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.nusystematicalpha.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://www.nusystematicalpha.com/about"
+        }
+      ]
+    }
+  ]
+}
+  </script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,25 +81,25 @@
 </head>
 
 <body>
-  <nav class="navbar" id="navbar">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
     <div class="container">
       <div class="nav-content">
-        <div class="logo">
-          <a href="index">
-            <img src="images/nusa-square.png" alt="NUSA Logo" class="logo-desktop">
-            <img src="images/nusa-square.png" alt="NUSA Logo" class="logo-mobile">
+        <a class="logo" href="/" aria-label="NUSA home">
+            <img src="images/nusa-square.png" alt="" width="40" height="40" class="logo-desktop">
+            <img src="images/nusa-square.png" alt="" width="40" height="40" class="logo-mobile">
           </a>
-        </div>
-        <button class="mobile-toggle" id="mobile-toggle">
+        <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <ul class="nav-links" id="nav-links">
-          <li><a href="index" class="nav-link">Home</a></li>
-          <li><a href="about" class="nav-link active">About</a></li>
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="about" class="nav-link active" aria-current="page">About</a></li>
           <li><a href="team" class="nav-link">Team</a></li>
           <li><a href="projects" class="nav-link">Research</a></li>
+
           <li><a href="events" class="nav-link">Events</a></li>
           <li><a href="apply" class="nav-link cta-button">Join Us</a></li>
         </ul>
@@ -65,8 +107,11 @@
     </div>
   </nav>
 
+  <main id="main-content" tabindex="-1">
+
   <section class="page-hero">
     <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">About</li></ol></nav>
       <h1 class="page-title">About <span class="accent-text">NUSA</span></h1>
       <p class="page-subtitle">Premier Quantitative Finance Group at Northeastern University</p>
     </div>
@@ -76,6 +121,7 @@
     <div class="container">
       <div class="about-content">
         <div class="about-description">
+          <h2>Quantitative finance at Northeastern</h2>
           <p>Northeastern University Systematic Alpha (NUSA) is a premier student organization dedicated to quantitative
             finance and algorithmic trading and development. Founded in 2019 by passionate students, we bridge the gap
             between academic theory and real-world financial markets through hands-on learning and practical
@@ -87,9 +133,10 @@
             exposure to cutting-edge financial technologies.</p>
 
           <p>Through weekly workshops, guest speakers from industry, and collaborative projects, NUSA prepares members
-            for careers in quantitative trading, risk management, financial engineering, and fintech. We maintain
-            partnerships with leading financial institutions and provide our members with unique opportunities for
-            internships and full-time positions.</p>
+            for careers in quantitative trading, risk management, financial engineering, and fintech. We build
+            connections with industry practitioners through events such as our Fidelity office visit and member co-op panel.</p>
+
+          <p>Explore our <a href="projects">student research</a> and <a href="events">club events</a> to see how members learn and work together.</p>
 
           <p>Whether you’re just starting out or aiming to specialize, NUSA has a place for you: join as a general
             member and attend our open weekly meetings, or become a Quantitative Researcher on one of our focused
@@ -107,7 +154,7 @@
             <p>Industry Partners</p>
           </div>
           <div class="stat-item">
-            <h3><span id="years-active"></span>+</h3>
+            <h3><span id="years-active">7</span>+</h3>
             <p>Years Active</p>
           </div>
         </div>
@@ -115,7 +162,7 @@
     </div>
   </section>
 
-<section class="partner section-padding">
+<section id="tradermath" class="partner section-padding">
   <div class="container">
     <div class="partner-card">
       <a
@@ -128,9 +175,9 @@
       </a>
 
       <div class="partner-content">
-        <h3 class="partner-title">
+        <h2 class="partner-title">
           Exclusive Partnership <span class="accent-text">with Tradermath</span>
-        </h3>
+        </h2>
 
         <p class="partner-blurb">
           Thanks to our new partnership, <strong>NUSA</strong> members unlock
@@ -156,15 +203,61 @@
   </div>
 </section>
 
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch('footer.html')
-      .then(res => res.ok ? res.text() : Promise.reject(res.statusText))
-      .then(html => {
-        document.getElementById('footer-placeholder').innerHTML = html;
-      })
-      .catch(err => console.error('Failed to load footer:', err));
-  </script>
+  </main>
+
+  <!-- Shared footer: keep in sync with footer.html -->
+<footer class="footer">
+    <div class="container">
+
+      <div class="footer-signup">
+        <h2>Stay connected with NUSA</h2>
+        <p>Receive formal notifications regarding application releases, program updates, and club information directly to your inbox.</p>
+        <form action="https://formsubmit.co/8907cb2f2ef0ed7e71e6a164039fda04" method="POST">
+                      <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="your.email@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-sections">
+        <div class="footer-brand">
+          <img class="footer-logo" src="images/nusa-bannar.png" alt="NU Systematic Alpha logo" width="8000" height="1000" loading="lazy">
+          <p>Empowering students through data‐driven trading and research.</p>
+        </div>
+        <div class="footer-links">
+          <h2>Explore NUSA</h2>
+          <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="projects">Research</a></li>
+
+            <li><a href="team">Team</a></li>
+            <li><a href="events">Events</a></li>
+            <li><a href="apply">Apply</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h2>Connect with us</h2>
+          <p>Northeastern University · Boston, MA</p>
+          <p><a href="mailto:nusystematicalpha@gmail.com">nusystematicalpha@gmail.com</a></p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/nusystematicalpha/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/NUSytematicAlpha/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/NU-Systematic-Alpha" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/company/https-nusa-website-henna.vercel.app-/posts/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Northeastern University Systematic Alpha. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
 
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
