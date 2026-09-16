@@ -1,6 +1,9 @@
 {
-  "name": "NUSA",
+  "name": "Northeastern University Systematic Alpha",
   "short_name": "NUSA",
+  "description": "Northeastern University's quantitative finance club.",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "/favicons/web-app-manifest-192x192.png",
