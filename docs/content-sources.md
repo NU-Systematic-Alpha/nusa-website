@@ -2,7 +2,7 @@
 
 Reviewed September 16, 2026. The website additions use public materials only.
 
-- [NUSA LinkedIn](https://www.linkedin.com/company/https-nusa-website-henna.vercel.app-/): JRAP overview, April 14, 2026 research showcase, Fidelity Boston visit, member career panel. No unverified event date or partner offer expiry was inferred. Use the supplied posts URL in site links.
+- [NUSA LinkedIn](https://www.linkedin.com/company/nusystematicalpha/): JRAP overview, April 14, 2026 research showcase, Fidelity Boston visit, member career panel. No unverified event date or partner offer expiry was inferred. Use the supplied posts URL in site links.
 - [BondSpillover](https://github.com/NU-Systematic-Alpha/BondSpillover): repository purpose and public notebook names. The website links to the repository without claiming that its code has been independently validated.
 - Existing published research summaries and PDFs in `projects.html`: preserved; linked from the homepage and research page.
 - [Instagram](https://www.instagram.com/nusystematicalpha/): retained as an official announcement channel. Direct content fetching was unavailable, so no new claims depend on inaccessible Instagram posts.
